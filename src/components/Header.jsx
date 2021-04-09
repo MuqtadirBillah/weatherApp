@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 function Header(){
-
+    console.log("hahaha");
 
     return(
         <div className="header">
