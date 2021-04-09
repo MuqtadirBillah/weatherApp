@@ -47,17 +47,17 @@ function Section(){
       setWeatherDescription(wData.weather[0].description)
       setWindSpeed(wData.wind.speed);
     })
-    .catch(function (error) {
-      console.log(error);
+    .catch(function (err) {
+      console.log(err);
     })
     .then(function () {
     }); 
   }
-  console.log("Current Temperature "+temp);
-  console.log("Minimun Temperature "+temp_min);
-  console.log("Maximum Temperature "+temp_max);
-  console.log("Feels Like "+feels_like);
-  console.log("Humidity "+humidity);
+//   console.log("Current Temperature "+temp);
+//   console.log("Minimun Temperature "+temp_min);
+//   console.log("Maximum Temperature "+temp_max);
+//   console.log("Feels Like "+feels_like);
+//   console.log("Humidity "+humidity);
 
     return(
         <div className="section">
@@ -81,10 +81,6 @@ function Section(){
             weatherIcon={weatherIcon}
             cityName = {cityName}
         />
-
-        {/* <h1>{cityName}<br /></h1>
-        <img src={weatherIcon} alt=""/>
-        <p>temp = {temp}<br />minTemp = {temp_min}<br />maxTemp = {temp_max}<br />Feels Like = {feels_like}<br />Humidity = {humidity}<br />Weather Condition = {weatherCondition}<br />Weather Description = {weatherDescription}<br />Wind Speed = {windSpeed}</p> */}
         </div>
     );
 }
