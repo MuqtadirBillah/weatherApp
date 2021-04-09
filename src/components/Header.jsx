@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 
 function Header(){
     console.log("hahaha");
-    var a = "/weatherApp"
 
     return(
         <div className="header">
             <nav  className="navbar navbar-expand-lg navbar-light nav-bg">
-            <a className="navbar-brand" href="#"><img src={a+"/weatherApp/images/logo.png"} alt="logo" width="50px"/><span className="logoText">HahahaSunshine Weather</span></a>
+            <a className="navbar-brand" href="#"><img src="/weatherApp/images/logo.png" alt="logo" width="50px"/><span className="logoText">Sunshine Weather</span></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
