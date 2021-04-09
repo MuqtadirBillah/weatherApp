@@ -19,8 +19,6 @@ function Section(){
         clearInterval(interval);
         }
     }, []);
-    console.log(clockTime);
-    console.log(process.env);
 
     var [weatherIconCode, setWeatherIconCode] = useState("01d");
     var weatherIcon = "http://openweathermap.org/img/wn/"+weatherIconCode+"@2x.png"
@@ -48,8 +46,6 @@ function Section(){
       setWeatherCondition(wData.weather[0].main);
       setWeatherDescription(wData.weather[0].description)
       setWindSpeed(wData.wind.speed);
-      console.log(weatherCondition);
-      console.log(weatherDescription);
     })
     .catch(function (error) {
       console.log(error);
